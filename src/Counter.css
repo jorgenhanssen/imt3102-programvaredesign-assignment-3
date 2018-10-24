@@ -6,7 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
+.Counter {
   height: 100vh;
   width: 100vw;
   display: flex;

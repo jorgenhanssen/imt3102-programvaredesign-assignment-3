@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 
-import App from './App';
+import Counter from './Counter';
 
 
 // Import reducers
@@ -18,7 +18,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <Counter />
     </Provider>
 , document.getElementById('root'));
 

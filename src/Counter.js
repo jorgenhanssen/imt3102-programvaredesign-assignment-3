@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './App.css';
+import './Counter.css';
 
 // Import actions
 import actions from './actions';
 
 
-class App extends Component {
+class Counter extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="Counter">
         <p>
           {this.props.number.value}
         </p>
@@ -36,4 +36,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 // Connect to Redux store through 'react-redux' api
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);
